@@ -2,8 +2,8 @@ language: python
 python:
   - "2.7"
   - "3.6"
-# install:
-#   - pip install -e . --use-mirrors
+install:
+  - pip install -r test_requirements.txt
 # before_script:
 #   - pip install -r test_requirements.txt --use-mirrors
 #   - git clone https://github.com:paulsievers/python_tests.git
@@ -11,7 +11,7 @@ python:
 #   - git checkout -qf 17b8119796516195527dcb4f454a2ebd41d60244
 #   - py.test example/tests.py --cov=example
 #   - cd -
-# script:
-#   - py.test coveralls/tests.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+script:
+  - pytest
 # after_success:
 #   - coveralls
