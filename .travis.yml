@@ -1,6 +1,5 @@
 language: python
 python:
-  - "2.7"
   - "3.6"
 install:
   - pip install -r test_requirements.txt
@@ -13,5 +12,5 @@ install:
 #   - cd -
 script:
   - pytest
-# after_success:
-#   - coveralls
+after_success:
+  - coveralls
