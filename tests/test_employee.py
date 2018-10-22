@@ -12,4 +12,4 @@ class TestEmployee(unittest.TestCase):
 
     def test_email(self):
         self.assertEqual(self.emp_1.email, "John.Smith@company.com")
-        self.assertEqual(self.emp_2.email, "Susan.Anderson@company.com")
+        self.assertEqual(self.emp_2.email, "Susan.Anderson@company.com") #is this line too long yets
