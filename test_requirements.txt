@@ -1,2 +1,3 @@
 pytest
-python-coveralls
+pytest-cov
+coveralls
